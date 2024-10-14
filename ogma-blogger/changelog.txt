@@ -1,0 +1,17 @@
+== 1.0.4 - 2024-06-05 ==
+    - Fix: Related post title hover color fixed.
+    - Imp: Related post second layout title margin issue fixed.
+
+== 1.0.3 - 2024-05-12 ==
+    - Fix: Dark mode issue fixed in single post comment titles.
+	
+== 1.0.2 - 2024-04-23 ==
+    - Imp: Single post page design improvement done.
+    - Imp: Some responsive design tweaks done.
+
+== 1.0.1 - 2024-04-11 ==
+    - Fix: Theme Uri link.
+    - Fix: Default theme color.
+
+== 1.0.0 - 2024-04-10 ==
+    -New: Submit theme on wordpress.org trac.

@@ -1,0 +1,264 @@
+/*
+Theme Name:			    Ogma Blogger
+Theme URI:    		  https://ogma.mysterythemes.com/ogma-blog/
+Author:       		  Mystery Themes
+Author URI:   		  https://mysterythemes.com/
+Description:  		  Ogma Blogger WordPress theme is a stylish and customizable option designed for bloggers who want to create a professional and fun online blog. This theme has a modern and clean design with customizable features that allow you to express your content beautifully. Whether your blog is about lifestyle, travel, or food, a blog theme provides an easy platform to share your stories, photos and videos. It is designed to look good on all devices and you can customize the colors and layout to suit your style. You can also enhance its functionality by adding popular plugins. Overall, if you are looking for a beautiful and user-friendly theme for your WordPress blog, a blog theme is a good choice. Check demo here: https://demo.mysterythemes.com/child-theme/ogma-blogger
+Version:            1.0.4
+Requires at least:  5.0
+Tested up to:       6.5
+Requires PHP:       7.2
+License:      		  GNU General Public License v3 or later
+License URI:  		  http://www.gnu.org/licenses/gpl-3.0.html
+Template:     		  ogma-blog
+Text Domain:  		  ogma-blogger
+Tags:         		  blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
+
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.ogma-blog-site-layout--separate #page {
+	background: #edf6f9;
+}
+
+.archive-content-wrapper .post-thumbnail-wrap {
+	border-radius: 0;
+}
+
+.ogma-blog-post-content-wrap .post-cats-wrap {
+	margin-bottom: -10px;
+}
+
+.ogma-blog-post-content-wrap .entry-title a {
+	font-size: 26px;
+	line-height: 1.5;
+	display: block;
+}
+
+.archive-content-wrapper .entry-content {
+	font-size: 16px;
+}
+
+.ogma-blog-post-content-wrap .entry-meta span a {
+	font-weight: 500;
+}
+
+#site-navigation ul li a {
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.logo-ads-wrapper {
+	padding: 30px 0 30px;
+}
+
+.widget .entry-title {
+	margin: -5px 0 5px;
+	font-size: 18px;
+}
+
+.ogma-blogger-background-animation {
+  background: transparent;
+  width: 100%;
+}
+
+.ogma-blogger-circles {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ogma-blogger-circles li {
+	position: fixed;
+	display: block;
+	list-style: none;
+	width: 20px;
+	height: 20px;
+	background: rgb(0 121 171 / 30%);
+	animation: animate 25s linear infinite;
+	bottom: -150px;
+	border-radius: 100% !important;
+}
+
+.ogma-blogger-circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.ogma-blogger-circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.ogma-blogger-circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.ogma-blogger-circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.ogma-blogger-circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.ogma-blogger-circles li:nth-child(6) {
+  left: 75%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 3s;
+}
+
+.ogma-blogger-circles li:nth-child(7) {
+  left: 35%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 7s;
+}
+
+.ogma-blogger-circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.ogma-blogger-circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.ogma-blogger-circles li:nth-child(10) {
+  left: 85%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+.ogma-blogger-circles li:nth-child(11) {
+  left: 5%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+.ogma-blogger-circles li:nth-child(12) {
+  left: 95%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+
+}
+
+#top-header, #masthead, #content, #colophon {
+	z-index: 99;
+	position: relative;
+}
+
+#masthead {
+	z-index: 9999;
+}
+
+.widget-title {
+	font-size: 22px;
+	border-left: 6px solid #00796b;
+	padding-left: 10px;
+	line-height: 22px;
+	margin: 10px 0 20px;
+}
+
+#ogma-blog-scrollup {
+	z-index: 999999;
+}
+
+.page-content, .entry-content, .entry-summary {
+	margin: 15px 0 0;
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+#colophon .widget.widget_block {
+	margin: 0;
+	padding: 0;
+}
+
+#footer-widget-area {
+	padding: 60px 0 40px;
+}
+
+.dark-mode #comments h2.comments-title,
+.dark-mode .comment-author .fn .url{
+	color: #fff;
+}
+
+.single.single-posts-layout--two .related-posts-wrapper .entry-title a {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+@media (max-width:768px) {
+.single .ogma-blog-post-content-wrap .entry-title {
+	font-size: 24px;
+}
+.footer-widget:last-child {
+	margin-bottom: 0;
+}
+#footer-widget-area {
+	padding-top: 40px;
+}
+.site-branding {
+	margin: 20px 0 20px;
+}
+}
