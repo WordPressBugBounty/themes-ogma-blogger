@@ -4,9 +4,9 @@ Theme URI:    		  https://ogma.mysterythemes.com/ogma-blog/
 Author:       		  Mystery Themes
 Author URI:   		  https://mysterythemes.com/
 Description:  		  Ogma Blogger WordPress theme is a stylish and customizable option designed for bloggers who want to create a professional and fun online blog. This theme has a modern and clean design with customizable features that allow you to express your content beautifully. Whether your blog is about lifestyle, travel, or food, a blog theme provides an easy platform to share your stories, photos and videos. It is designed to look good on all devices and you can customize the colors and layout to suit your style. You can also enhance its functionality by adding popular plugins. Overall, if you are looking for a beautiful and user-friendly theme for your WordPress blog, a blog theme is a good choice. Check demo here: https://demo.mysterythemes.com/child-theme/ogma-blogger
-Version:            1.0.4
+Version:            1.0.5
 Requires at least:  5.0
-Tested up to:       6.5
+Tested up to:       6.7
 Requires PHP:       7.2
 License:      		  GNU General Public License v3 or later
 License URI:  		  http://www.gnu.org/licenses/gpl-3.0.html
@@ -246,6 +246,16 @@ body {
 .single.single-posts-layout--two .related-posts-wrapper .entry-title a {
   margin-bottom: 8px;
   line-height: 1.5;
+}
+
+.related-posts-wrapper .post-meta-wrap > span {
+	display: inline-block;
+}
+
+@media (max-width: 979px) {
+#site-navigation ul li:last-child a {
+	border-bottom: none;
+}
 }
 
 @media (max-width:768px) {
